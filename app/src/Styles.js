@@ -49,14 +49,12 @@ export const styles = StyleSheet.create({
     fontSize: deviceBasedDynamicDimension(14, true, 1),
     paddingTop: deviceBasedDynamicDimension(10, true, 1),
     paddingHorizontal: deviceBasedDynamicDimension(35, true, 1),
-    paddingBottom:deviceBasedDynamicDimension(6, true, 1)
-
+    paddingBottom: deviceBasedDynamicDimension(6, true, 1),
   },
   projectCompletedValueProfile: {
     fontWeight: '400',
     color: '#535353',
     fontSize: deviceBasedDynamicDimension(14, true, 1),
-
   },
   emailText: {
     paddingHorizontal: deviceBasedDynamicDimension(20, true, 1),
@@ -162,7 +160,7 @@ export const styles = StyleSheet.create({
   },
   aboutText: {
     fontSize: deviceBasedDynamicDimension(13, true, 1),
-     lineHeight: deviceBasedDynamicDimension(18, true, 1),
+    lineHeight: deviceBasedDynamicDimension(18, true, 1),
     fontWeight: '400',
     paddingHorizontal: deviceBasedDynamicDimension(35, true, 1),
     paddingTop: deviceBasedDynamicDimension(14, true, 1),
@@ -231,7 +229,7 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: deviceBasedDynamicDimension(10, true, 1),
     borderTopRightRadius: deviceBasedDynamicDimension(10, true, 1),
     paddingTop: deviceBasedDynamicDimension(20, true, 1),
-    marginTop: 50
+    marginTop: 50,
   },
   freelancersText: {
     fontWeight: '700',
@@ -243,5 +241,89 @@ export const styles = StyleSheet.create({
     fontSize: deviceBasedDynamicDimension(14, true, 1),
     color: 'black',
     marginLeft: Platform.OS === 'android' ? '1%' : null,
-  }
+  },
+  titleText: {
+    fontWeight: '500',
+    fontSize: deviceBasedDynamicDimension(15, true, 1),
+    lineHeight: deviceBasedDynamicDimension(18, true, 1),
+    color: R.colors.black,
+    paddingTop: deviceBasedDynamicDimension(17, true, 1),
+  },
+  budgetTextStyle: {
+    fontWeight: '400',
+    fontSize: deviceBasedDynamicDimension(11, true, 1),
+    lineHeight: deviceBasedDynamicDimension(13, true, 1),
+    color: R.colors.black,
+    paddingTop: deviceBasedDynamicDimension(2, true, 1),
+    paddingBottom: deviceBasedDynamicDimension(20, true, 1),
+  },
+  checkedImg: {
+    height: deviceBasedDynamicDimension(25, true, 1),
+    width: deviceBasedDynamicDimension(25, true, 1),
+  },
+  secondView: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  starImageStyle: {
+    width: deviceBasedDynamicDimension(14.29, true, 1),
+    height: deviceBasedDynamicDimension(14, true, 1),
+    resizeMode: 'cover',
+  },
+  openView: {
+    width: deviceBasedDynamicDimension(36, true, 1),
+    height: deviceBasedDynamicDimension(4, true, 1),
+    resizeMode: 'cover',
+  },
+  modalContainer: {
+    flex: 1,
+    backgroundColor: R.colors.modalBlack,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  upperModalView: {
+    backgroundColor: R.colors.white,
+    padding: '7%',
+    borderRadius: 8,
+    width: '90%',
+  },
+  modalDataView: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  starsView: {
+    flexDirection: 'row',
+    marginRight: deviceBasedDynamicDimension(22, true, 1),
+  },
+  bottomListView:{
+    marginBottom: deviceBasedDynamicDimension(15, true, 1),
+  },
+  headerContainer:{
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    marginHorizontal: deviceBasedDynamicDimension(27.5, true, 1),
+    paddingVertical: deviceBasedDynamicDimension(10, true, 1),
+  },
+  drawerStyle: {
+    height: deviceBasedDynamicDimension(15.5, true, 1),
+    width: deviceBasedDynamicDimension(23, true, 1),
+  },
+  searchContainerStyle: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+  searchIconStyle: {
+    height: deviceBasedDynamicDimension(20.5, true, 1),
+    width: deviceBasedDynamicDimension(20, true, 1),
+  },
+  filterIconStyle: {
+    height: deviceBasedDynamicDimension(39, true, 1),
+    width: deviceBasedDynamicDimension(39, true, 1),
+  },
+  noDataView:{flex: 1, justifyContent: 'center', alignItems: 'center'}
 });
