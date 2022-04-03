@@ -37,9 +37,7 @@ const DATA = [
   },
 ];
 
-// const Item = ({item, onPress, backgroundColor, textColor}) => (
 
-// );
 
 const FreelancersList = ({navigation}) => {
   const [data, setData] = useState(null);
@@ -47,7 +45,6 @@ const FreelancersList = ({navigation}) => {
   const [error, setError] = useState(null);
   const [openModal, setOpenModal] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
-  const [checked, setchecked] = useState(false);
   const [rating, setRating] = useState(null);
   const [maxRating, setMaxRating] = useState([1, 2, 3, 4, 5]);
 
@@ -120,10 +117,12 @@ const FreelancersList = ({navigation}) => {
           <View style={styles.horizontalLineView} />
           <View style={styles.specsView}>
             <View style={styles.secondContainer}>
+            <Image source={R.images.Ellipse_green} style={styles.greenElipse}/>
               {item.specializations?.map(item => {
+                // let separatedItem = item.join(', ')
                 return (
                   <View key={item}>
-                    <Text style={styles.specsText}>{item}</Text>
+                    <Text style={styles.specsText}>{item + ', '}</Text>
                   </View>
                 );
               })}

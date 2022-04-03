@@ -6,9 +6,8 @@ import {
   ScrollView,
   ToastAndroid,
 } from 'react-native';
-import React, {useState,useEffect} from 'react';
 import {styles} from '../Styles';
-import {CustomButton, Loader1} from '../components';
+import {CustomButton} from '../components';
 import R from '../R';
 
 const Profile = ({route, navigation}) => {
@@ -61,6 +60,7 @@ const Profile = ({route, navigation}) => {
 
       <View style={styles.locationCard}>
         <View style={styles.secondContainerProfile}>
+        <Image source={R.images.Ellipse_green} style={styles.greenElipse}/>
           {data?.specializations?.map(item => {
             return (
               <View key={item}>

@@ -11,10 +11,10 @@ export const styles = StyleSheet.create({
   nameText: {
     color: R.colors.black,
     fontSize: deviceBasedDynamicDimension(18, true, 1),
-    fontWeight: '700',
     lineHeight: deviceBasedDynamicDimension(18, true, 1),
     paddingHorizontal: deviceBasedDynamicDimension(20, true, 1),
     paddingTop: deviceBasedDynamicDimension(20, true, 1),
+    fontFamily: R.fonts.RobotoBold
   },
   projectCompletedView: {
     borderRadius: deviceBasedDynamicDimension(50, true, 1),
@@ -33,19 +33,21 @@ export const styles = StyleSheet.create({
     width: '60%',
   },
   projectCompletedText: {
-    fontWeight: '700',
+     fontWeight: '700',
     color: '#535353',
     fontSize: deviceBasedDynamicDimension(14, true, 1),
   },
   projectCompletedValue: {
-    fontWeight: '500',
+     fontWeight: '500',
     color: '#535353',
+    opacity: 1,
     fontSize: deviceBasedDynamicDimension(14, true, 1),
     lineHeight: deviceBasedDynamicDimension(16, true, 1),
   },
   projectCompletedTextProfile: {
-    fontWeight: '400',
+    fontFamily: R.fonts.RobotoRegular,
     color: '#535353',
+    fontFamily: R.fonts.RobotoRegular,
     fontSize: deviceBasedDynamicDimension(14, true, 1),
     paddingTop: deviceBasedDynamicDimension(10, true, 1),
     paddingHorizontal: deviceBasedDynamicDimension(35, true, 1),
@@ -70,8 +72,8 @@ export const styles = StyleSheet.create({
     color: '#007AFF',
     textDecorationColor: '#007AFF',
     textDecorationLine: 'underline',
-    fontWeight: '400',
     fontSize: deviceBasedDynamicDimension(14, true, 1),
+    fontFamily: R.fonts.RobotoRegular
   },
   specsView: {
     flexDirection: 'row',
@@ -105,23 +107,23 @@ export const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   specsText: {
-    fontWeight: '400',
     fontSize: deviceBasedDynamicDimension(11, true, 1),
     lineHeight: deviceBasedDynamicDimension(16, true, 1),
     color: R.colors.black,
+    fontFamily: R.fonts.RobotoRegular
   },
   ratingText: {
-    fontWeight: '400',
     fontSize: deviceBasedDynamicDimension(11, true, 1),
     lineHeight: deviceBasedDynamicDimension(13, true, 1),
     color: R.colors.black,
+    fontFamily: R.fonts.RobotoRegular
   },
   starImg: {
     height: deviceBasedDynamicDimension(14, true, 1),
     width: deviceBasedDynamicDimension(14.29, true, 1),
     marginRight: deviceBasedDynamicDimension(10, true, 1),
   },
-  secondContainer: {flex: 2, flexDirection: 'row'},
+  secondContainer: {flex: 2, flexDirection: 'row', alignItems :'center'},
   ratingsView: {
     flex: 1,
     flexDirection: 'row',
@@ -134,9 +136,9 @@ export const styles = StyleSheet.create({
   },
   profileNameText: {
     fontSize: deviceBasedDynamicDimension(36, true, 1),
-    fontWeight: '700',
     paddingHorizontal: deviceBasedDynamicDimension(35, true, 1),
     color: R.colors.black,
+    fontFamily: R.fonts.RobotoBold
   },
   imgBackgroundContainer: {
     height: '100%',
@@ -161,10 +163,11 @@ export const styles = StyleSheet.create({
   aboutText: {
     fontSize: deviceBasedDynamicDimension(13, true, 1),
     lineHeight: deviceBasedDynamicDimension(18, true, 1),
-    fontWeight: '400',
+    // fontWeight: '400',
     paddingHorizontal: deviceBasedDynamicDimension(35, true, 1),
     paddingTop: deviceBasedDynamicDimension(14, true, 1),
     color: '#000000',
+    fontFamily: R.fonts.RobotoRegular
   },
   locationCard: {
     bottom: 0,
@@ -181,7 +184,7 @@ export const styles = StyleSheet.create({
     elevation: 20,
     overflow: 'visible',
   },
-  secondContainerProfile: {flexDirection: 'row'},
+  secondContainerProfile: {flexDirection: 'row', alignItems: 'center'},
   locationView: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -192,16 +195,16 @@ export const styles = StyleSheet.create({
     width: deviceBasedDynamicDimension(13.88, true, 1),
   },
   specsTextProfile: {
-    fontWeight: '400',
     fontSize: deviceBasedDynamicDimension(11, true, 1),
     lineHeight: deviceBasedDynamicDimension(13, true, 1),
     color: '#979797',
+    fontFamily: R.fonts.RobotoRegular
   },
   addressText: {
-    fontWeight: '400',
     fontSize: deviceBasedDynamicDimension(11, true, 1),
     lineHeight: deviceBasedDynamicDimension(13, true, 1),
     color: '#007AFF',
+    fontFamily: R.fonts.RobotoRegular
   },
   imgProfileView: {
     height: '60%',
@@ -232,10 +235,9 @@ export const styles = StyleSheet.create({
     marginTop: 50,
   },
   freelancersText: {
-    fontWeight: '700',
     fontSize: deviceBasedDynamicDimension(17, true, 1),
-    lineHeight: deviceBasedDynamicDimension(22, true, 1),
     color: R.colors.black,
+    fontFamily: R.fonts.RobotoBold
   },
   textStyle: {
     fontSize: deviceBasedDynamicDimension(14, true, 1),
@@ -243,19 +245,19 @@ export const styles = StyleSheet.create({
     marginLeft: Platform.OS === 'android' ? '1%' : null,
   },
   titleText: {
-    fontWeight: '500',
     fontSize: deviceBasedDynamicDimension(15, true, 1),
     lineHeight: deviceBasedDynamicDimension(18, true, 1),
     color: R.colors.black,
     paddingTop: deviceBasedDynamicDimension(17, true, 1),
+    fontFamily: R.fonts.RobotoMedium
   },
   budgetTextStyle: {
-    fontWeight: '400',
     fontSize: deviceBasedDynamicDimension(11, true, 1),
-    lineHeight: deviceBasedDynamicDimension(13, true, 1),
     color: R.colors.black,
     paddingTop: deviceBasedDynamicDimension(2, true, 1),
     paddingBottom: deviceBasedDynamicDimension(20, true, 1),
+    fontFamily: R.fonts.RobotoRegular,
+    opacity: 0.5
   },
   checkedImg: {
     height: deviceBasedDynamicDimension(25, true, 1),
@@ -325,5 +327,10 @@ export const styles = StyleSheet.create({
     height: deviceBasedDynamicDimension(39, true, 1),
     width: deviceBasedDynamicDimension(39, true, 1),
   },
-  noDataView:{flex: 1, justifyContent: 'center', alignItems: 'center'}
+  noDataView:{flex: 1, justifyContent: 'center', alignItems: 'center'},
+  greenElipse: {
+    height: deviceBasedDynamicDimension(10, true, 1),
+    width: deviceBasedDynamicDimension(10, true, 1),
+    marginRight: deviceBasedDynamicDimension(4, true, 1)
+  }
 });

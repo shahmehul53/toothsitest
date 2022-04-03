@@ -3,6 +3,7 @@ import { TouchableOpacity, Text, StyleSheet } from "react-native";
 
 import React from "react";
 import { deviceBasedDynamicDimension } from "../scale";
+import R from "../R";
 
 
 export default function CustomButton(props) {
@@ -31,13 +32,14 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     includeFontPadding: false,
     padding: deviceBasedDynamicDimension(0, true, 1),
-    color: 'white',
+    color: '#FFFFFF',
     textAlign: "center",
     textAlignVertical: "top",
     alignSelf: "center",
     justifyContent: "center",
     alignItems: "center",
     fontSize: deviceBasedDynamicDimension(15, true, 1),
-    fontWeight: '700'
+    fontFamily: R.fonts.RobotoBold
+    // fontWeight: '700'
   },
 });
